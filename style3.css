@@ -1,0 +1,83 @@
+:root {
+  --pink: #;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  transition: 0.2s linear;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+header {
+  padding: 2rem 8%;
+  border: 2rem solid pink;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  color: yellowgreen;
+  background-color: aqua;
+  font-size: 2rem;
+  position: fixed;
+}
+
+header.logo {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #fff;
+}
+header .logo span {
+  color: var(--green);
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #666;
+}
+header .navbar a:hover {
+  color: var(--green);
+}
+.home.content span {
+  font-size: 2.5rem;
+}
+header .icons a {
+  font-size: 2.5rem;
+  color: #333;
+  margin-left: 2.5rem;
+}
+
+header .icons a:hover {
+  color: var(--green);
+}
+header #toggler {
+  display: none;
+  padding: 1rem 1rem;
+}
+section {
+  padding: 2rem 9%;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  background: #333;
+  color: #fff;
+  padding: 1rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  translate: ;
+}
+.btn:hover {
+  background: var(--pink);
+}

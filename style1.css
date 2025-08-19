@@ -1,0 +1,46 @@
+body {
+  font-size: 2rem;
+  background-color: bisque;
+}
+div {
+  border-radius: 10px;
+  background-color: brown;
+  margin: 2rem 3rem;
+}
+div .box {
+  position: relative;
+  padding: 2px 3px;
+  border: 2px solid rgb(56, 30, 202);
+
+  width: 700px;
+  height: 700px;
+  background-color: aqua;
+  margin: 2rem;
+}
+div .one {
+  background-color: red;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+div .two {
+  background-color: green;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 60px;
+  left: 60px;
+  z-index: 4;
+}
+div .three {
+  background-color: yellow;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 110px;
+  left: 110px;
+  z-index: 5;
+}

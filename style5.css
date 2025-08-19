@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Miniver&family=Mozilla+Headline:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: pink;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background: var(--primary-color);
+}
+
+header .navbar {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text {
+  color: black;
+}
+.navbar .nav-menu .nav-link {
+  padding: 10px 10px;
+  color: black;
+  font-size: 1rem;
+}
+.navbar .nav-menu {
+  display: flex;
+  gap: 9px;
+}
+
+.navbar .nav-menu .nav-link:hover {
+  color: pink;
+  background-color: skyblue;
+}
+.section-content {
+  margin: 0 auto;
+
+  padding: 0 30px;
+}
+.hero-section {
+  background-image: url("./images_files/coffee1.jpg");
+  background-repeat: no-repeat;
+  max-height: 100vh;
+  background-size: contain;
+  height: 100vh;
+
+  background-position: center;
+}
+.hero-section .section-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: antiquewhite;
+  justify-content: space-between;
+}
+
+.hero-section .hero-details .title {
+  font-size: 2em;
+  color: deepskyblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.hero-section .hero-details .subtitle {
+  font-size: 3rem;
+  color: black;
+  margin-top: 8px;
+  max-width: 90%;
+  font-weight: bolder;
+}
+.hero-section .hero-details .description {
+  font-size: 2rem;
+  color: blue;
+  margin: 24px 0 40px;
+  max-width: 100%;
+  font-weight: bolder;
+}
+.hero-section.hero-image-wrapper {
+  max-width: 500px;
+  margin-right: 90px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.order-now-btn,
+.contact-us-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.order-now-btn {
+  background-color: yellowgreen;
+  border: 2px solid green;
+  color: white;
+}
+
+.order-now-btn:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+.contact-us-btn {
+  background-color: orange;
+  border: 2px solid darkorange;
+  color: white;
+}
+
+.contact-us-btn:hover {
+  background-color: orangered;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .navbar .nav-menu {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    background: white;
+  }
+
+  .navbar .nav-menu.nav-link {
+    color: yellow;
+    display: block;
+    margin-top: 17px;
+    font-size: 3em;
+  }
+}
+
+.hero-section .section-content {
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: 30px 20px 20px;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-section .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-direction: column;
+}
+.about-section {
+  background-color: darkcyan;
+}
+
+.youtube {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.youtube:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.youtube iframe {
+  width: 100%;
+  height: 100%;
+  border: 3pxwith solid black;
+}
+
+img {
+  padding: 2px;
+  margin-top: 3px;
+  border-radius: 50%;
+}
+.menu-section {
+  align-items: center;
+  background-color: pink;
+}
+.section-title {
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 5px;
+  color: blue;
+  text-align: center;
+}
+.section-title:hover {
+  color: crimson;
+}
+.menu-details .text {
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  background-color: chartreuse;
+
+  padding: 1rem 2rem;
+}
+.menu-section .menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 10px;
+  list-style: none;
+}
+
+.menu-item {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: darkcyan;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1 rem;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.menu-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 8px 8px 1px;
+  transition: transform 0.5s ease;
+}
+.menu-image:hover {
+  transform: scale(1.08);
+}
+.menu-item .menu-details:hover {
+  color: darkblue;
+}
+.section-testmonials {
+  margin: 1px;
+  padding: 20px;
+  background-color: burlywood;
+}
+
+.testmonials-text {
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 20px;
+  color: blue;
+  text-align: center;
+  text-decoration: underline;
+}
+.testmonials-text:hover {
+  color: black;
+}
+
+.testmonials-content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+}
+
+.testmonials-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 300px;
+  padding: 10px;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+.testmonials-details {
+  max-width: 300px;
+  text-align: center;
+}
+
+.testmonials-details .text-info {
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  margin: 5px 2px 2px;
+}
+
+.gallary-section {
+  background-color: pink;
+  padding: 20px;
+}
+
+.Gallary-title {
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 20px;
+  color: blue;
+  text-align: center;
+}
+
+.Gallary-title:hover {
+  color: crimson;
+}
+
+.gallary-section .Gallary-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Gallary-item {
+  flex: 1 0 150px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.Gallary-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10%;
+  object-fit: cover;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.Gallary-image:hover {
+  transform: scale(1.08);
+  transform: perspective(500px) rotateY(15deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.gallry-details {
+  margin-top: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+.contact-section {
+  background: lightgrey;
+  padding: 50px 0 100px;
+}
+
+.contact-section .section-contact {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center; /* center এর আশেপাশে থাকবে */
+  flex-wrap: wrap;
+}
+
+.section-contact .contact-info-list {
+  min-width: 100px;
+}
+
+.section-contact .contact-info-list .contact-info {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+  align-items: center;
+}
+
+.section-contact form {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-contact form input,
+.section-contact form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.section-contact .submit-button {
+  padding: 6px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.section-contact .submit-button:hover {
+  background: green;
+}

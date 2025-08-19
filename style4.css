@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  border: 1px solid blue;
+  border-radius: 20%;
+  color: black;
+  background-color: aquamarine;
+  text-decoration: none;
+  transition: transform 0.9s ease;
+}
+h1:hover {
+  color: blue;
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.navbar {
+  padding: 2rem;
+  position: flex;
+  margin: 1rem;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3%;
+  border: 1rem solid aqua;
+  border-radius: 10%;
+  background-color: yellow;
+  transform: translatey(-70px);
+}
