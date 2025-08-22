@@ -1,0 +1,48 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2px;
+  padding: 2px;
+  background-color: #4ce470;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Logo text */
+.logo-text .written {
+  font-size: 2rem;
+  font-weight: 400;
+  color: crimson;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Menubar section */
+nav.menubar section.menuitem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 3rem;
+}
+
+/* Links styling */
+nav.menubar a {
+  text-decoration: none;
+  color: white;
+  background-color: crimson;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav.menubar a:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
